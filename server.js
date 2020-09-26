@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/workouts',
+  process.env.MONGODB_URI || 'mongodb+srv://mr-cade:20164Runner@cluster0.qf7cp.mongodb.net/workout?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
